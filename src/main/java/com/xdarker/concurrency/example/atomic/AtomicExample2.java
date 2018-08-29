@@ -1,13 +1,12 @@
 package com.xdarker.concurrency.example.atomic;
 
-import com.xdarker.concurrency.annoations.UnThreadSafe;
+import com.xdarker.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
@@ -15,7 +14,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * 2018/8/27 22:31
  */
 @Slf4j
-@UnThreadSafe
+@ThreadSafe
 public class AtomicExample2 {
 
     //请求总数

@@ -1,5 +1,6 @@
 package com.xdarker.concurrency.example.atomic;
 
+import com.xdarker.concurrency.annoations.ThreadSafe;
 import com.xdarker.concurrency.annoations.UnThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
@@ -15,7 +16,7 @@ import java.util.concurrent.atomic.LongAdder;
  * 2018/8/27 22:31
  */
 @Slf4j
-@UnThreadSafe
+@ThreadSafe
 public class AtomicExample3 {
 
     //请求总数
